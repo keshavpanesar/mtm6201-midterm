@@ -5,3 +5,7 @@ html{
 body{
     color: antiquewhite;
 }
+
+.slideshow img{
+    width: 100%;
+}
