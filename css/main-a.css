@@ -9,7 +9,6 @@ body{
 }
 
 .head-wrap{
-    width: 80%;
     margin: auto;
     justify-content: center;
 }
@@ -20,10 +19,11 @@ body{
 }
 
 .logo{
-    width: 25%;
-    height: 50%;
+    width: 50%;
     padding-top: 20px;
-    left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .nav-bar ul li{
@@ -42,8 +42,48 @@ body{
     font-size: 1.2rem;
 }
 
-.slideshow img{
+.main-wrap{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.restro img{
     width: 100%;
+    padding-bottom: 20px;
+}
+
+.founders{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.founders img{
+    width: 120px;
+    padding: 2rem 0;
+}
+
+.founder-text{
+    text-align: center;
+    font-weight: 500;
+}
+
+.food{
+    padding: 20px 0;
+}
+
+.food a{
+    text-decoration: none;
+    color: #E6EDF0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.food a:hover{
+    text-decoration: none;
+    color: #A80410;
 }
 
 .foot p{
@@ -61,7 +101,7 @@ body{
     }
 
     .logo{
-        width: 15%;
+        width: 29%;
     }
 
 
@@ -82,18 +122,53 @@ body{
         padding: 20px;
     }
 
-    .nav-bar a.home {
-        font-weight: 600;
+    .nav-bar a.about {
+        font-weight: 700;
         font-size: 1.3rem;
     }
 
-    .head-wrap,.main-wrap,.foot-wrap{
-        width: 80%;
+    .head-wrap{
+        width: 84%;
         margin: auto;
         justify-content: center;
     }
 
-    .slideshow{
-        padding-top: 5rem;
+    .main-wrap,.foot-wrap{
+        width: 75%;
+        margin: auto;
+        justify-content: center;
+    }
+    
+    .restro{ grid-area: b1;}
+    .ceos{ grid-area: b2;}
+    
+
+    .main-content{
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        grid-template-areas: 
+        'b1 b2';
+        gap: 1.5rem;
+    }
+    .restro{
+        width: 100%;
+    }
+
+    .founders{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .founders img{
+        width: 10rem;
+        padding: 2rem 0;
+    }
+
+    .founder-text{
+        text-align: center;
+        font-weight: 500;
+        font-size: 1rem;
     }
 }
