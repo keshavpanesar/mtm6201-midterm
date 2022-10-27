@@ -54,7 +54,9 @@ body{
     text-decoration: none;
     color: #E6EDF0;
     width: 100%;
+    display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 .food a:hover{
@@ -99,7 +101,7 @@ body{
     }
 
     .nav-bar a.work {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 1.3rem;
     }
 
@@ -132,9 +134,8 @@ body{
         'r1 r2 r3 r4'
         'f1 f2 f3 f4'
         ;
-        gap: 10px;
-        padding: 10px;
+        gap: 1.5rem;
     }
 
-    
+
 }
