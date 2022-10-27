@@ -1,11 +1,106 @@
 html{
     background-color: black;
+
 }
 
 body{
-    color: antiquewhite;
+    color: #E6EDF0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.head-wrap{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+.nav-bar {
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 25%;
+    height: 50%;
+    padding-top: 20px;
+    left: 2rem;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+}
+
+.nav-bar a {
+    color: #E6EDF0;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    color: #A80410;
+    font-size: 1.2rem;
 }
 
 .slideshow img{
     width: 100%;
+}
+
+.foot p{
+    font-weight: 100;
+    font-size: 0.6rem;
+    text-align: center;
+    padding-top: 1.6rem;
+}
+
+
+@media screen and (min-width: 960px) {
+    .headwrapper {
+        width: 80%;
+        display: flex;
+    }
+
+    header {
+        background-color: #222;
+        width: 100%;
+        padding: 30px 10%;
+        display: inline-block;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .nav-bar ul li {
+        color: #c78c06;
+        display: inline-block;
+        text-decoration: none;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .nav-bar a {
+        padding: 20px;
+    }
+
+    .nav-bar a:hover {
+        background-color: #c78c06;
+        color: #222;
+    }
+
+    .nav-bar a.home {
+        background-color: #c78c06;
+        color: #222;
+    }
+
+
+    .head-wrap,.main-wrap,.foot-wrap{
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+    }
 }
