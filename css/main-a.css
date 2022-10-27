@@ -55,19 +55,15 @@ body{
 
 
 @media screen and (min-width: 960px) {
-    .headwrapper {
-        width: 80%;
+
+    .header{
         display: flex;
     }
 
-    header {
-        background-color: #222;
-        width: 100%;
-        padding: 30px 10%;
-        display: inline-block;
-        justify-content: space-between;
-        margin: auto;
+    .logo{
+        width: 15%;
     }
+
 
     .nav-bar {
         display: flex;
@@ -76,7 +72,6 @@ body{
     }
 
     .nav-bar ul li {
-        color: #c78c06;
         display: inline-block;
         text-decoration: none;
         justify-content: space-between;
@@ -87,20 +82,18 @@ body{
         padding: 20px;
     }
 
-    .nav-bar a:hover {
-        background-color: #c78c06;
-        color: #222;
-    }
-
     .nav-bar a.home {
-        background-color: #c78c06;
-        color: #222;
+        font-weight: 600;
+        font-size: 1.3rem;
     }
-
 
     .head-wrap,.main-wrap,.foot-wrap{
         width: 80%;
         margin: auto;
         justify-content: center;
+    }
+
+    .slideshow{
+        padding-top: 5rem;
     }
 }
