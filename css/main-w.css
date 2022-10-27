@@ -9,7 +9,6 @@ body{
 }
 
 .head-wrap{
-    width: 80%;
     margin: auto;
     justify-content: center;
 }
@@ -20,10 +19,11 @@ body{
 }
 
 .logo{
-    width: 25%;
-    height: 50%;
+    width: 50%;
     padding-top: 20px;
-    left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .nav-bar ul li{
@@ -42,8 +42,24 @@ body{
     font-size: 1.2rem;
 }
 
-.slideshow img{
+.main-content img{
     width: 100%;
+}
+
+.food{
+    padding: 20px 0;
+}
+
+.food a{
+    text-decoration: none;
+    color: #E6EDF0;
+    width: 100%;
+    text-align: center;
+}
+
+.food a:hover{
+    text-decoration: none;
+    color: #A80410;
 }
 
 .foot p{
@@ -61,7 +77,7 @@ body{
     }
 
     .logo{
-        width: 15%;
+        width: 29%;
     }
 
 
@@ -82,18 +98,43 @@ body{
         padding: 20px;
     }
 
-    .nav-bar a.home {
+    .nav-bar a.work {
         font-weight: 600;
         font-size: 1.3rem;
     }
 
-    .head-wrap,.main-wrap,.foot-wrap{
+    .head-wrap{
+        width: 84%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .main-wrap,.foot-wrap{
         width: 80%;
         margin: auto;
         justify-content: center;
     }
 
-    .slideshow{
-        padding-top: 5rem;
+    .baked{ grid-area: r1}
+    .smoothie{ grid-area: r2;}
+    .chinese{ grid-area: r3;}
+    .healthy{ grid-area: r4;}
+    .cocktails{ grid-area: f1;}
+    .conti{ grid-area: f2;}
+    .indian{ grid-area: f3;}
+    .sweets{ grid-area: f4;}
+
+    .main-content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr); 
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        'r1 r2 r3 r4'
+        'f1 f2 f3 f4'
+        ;
+        gap: 10px;
+        padding: 10px;
     }
+
+    
 }
