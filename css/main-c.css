@@ -20,14 +20,20 @@ body{
 }
 
 .logo{
-    width: 25%;
-    height: 50%;
+    width: 50%;
     padding-top: 20px;
-    left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .nav-bar ul li{
     list-style-type: none;
+    
+}
+
+ul{
+    padding: 0%;
 }
 
 .nav-bar a {
@@ -35,15 +41,23 @@ body{
     display: block;
     padding: 12px;
     text-decoration: none;
+    transition: ease-in-out 0.25s;
 }
 
 .nav-bar a:hover {
     color: #A80410;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
-.slideshow img{
+.details{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.location{
     width: 100%;
+    text-align: center;
 }
 
 .foot p{
@@ -82,7 +96,7 @@ body{
         padding: 20px;
     }
 
-    .nav-bar a.home {
+    .nav-bar a.contact {
         font-weight: 600;
         font-size: 1.3rem;
     }
@@ -93,7 +107,26 @@ body{
         justify-content: center;
     }
 
-    .slideshow{
-        padding-top: 5rem;
+    .details{ grid-area: b1;}
+    .location{ grid-area: b2;}
+    
+
+    .main-content{
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        grid-template-areas: 
+        'b1 b2';
+        gap: 1.5rem;
     }
+
+    .details{
+        text-align: left;
+        padding-bottom: 2rem;
+    }
+    
+    .location{
+        width: 100%;
+    }
+
 }

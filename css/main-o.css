@@ -9,6 +9,7 @@ body{
 }
 
 .head-wrap{
+    width: 80%;
     margin: auto;
     justify-content: center;
 }
@@ -28,13 +29,18 @@ body{
 
 .nav-bar ul li{
     list-style-type: none;
+    
 }
 
+ul{
+    padding: 0%;
+}
 .nav-bar a {
     color: #E6EDF0;
     display: block;
     padding: 12px;
     text-decoration: none;
+    transition: ease-in-out 0.25s;
 }
 
 .nav-bar a:hover {
