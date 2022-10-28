@@ -66,6 +66,16 @@ ul{
     font-size: 18px;
 }
 
+.forminput:focus{
+    background-color: lightblue;
+    color: #CBD7CE;
+}
+
+.formmessageinput:focus{
+    background-color: lightblue;
+    color: #CBD7CE;
+}
+
 .formmessageinput {
     width: 100%;
     font-size: 18px;
@@ -79,7 +89,18 @@ ul{
     font-size: 1.1rem;
     font-weight: 700;
     border-radius: 40px;
-    
+    transition: ease-in-out 0.25s;
+}
+
+.formbutton:hover{
+    translate: y-axis 1rem;
+    padding: 0.2rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.formbutton:active{
+    background-color: #A80410;
+    color: #CBD7CE;
 }
 
 .contactbox{

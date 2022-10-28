@@ -27,9 +27,8 @@ body{
     display: block;
 }
 
-.nav-bar ul li{
+.nav-bar ul {
     list-style-type: none;
-    
 }
 
 ul{
@@ -91,6 +90,10 @@ ul{
         width: 29%;
     }
 
+    header{
+        justify-content: space-between;
+        margin: auto;
+    }
 
     .nav-bar {
         display: flex;
@@ -125,6 +128,31 @@ ul{
         margin: auto;
         justify-content: center;
     }
+    
+
+    @keyframes yummy{
+        0%{
+          tranform: scale(1) ;
+        }
+        
+        50%{
+            transform: scale(1.15);
+        }
+
+        100%{
+          transform: scale(1);
+        }
+
+        
+        
+      }
+      
+      .food:hover{
+        animation: yummy;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+
 
     .baked{ grid-area: r1}
     .smoothie{ grid-area: r2;}
