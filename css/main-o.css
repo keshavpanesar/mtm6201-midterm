@@ -51,7 +51,7 @@ body{
 .contactbox {
     font-weight: 600;
     font-size: 1.2rem;
-    padding: 1.5rem 0;
+    padding: 1rem 0rem 2rem 0rem;
 }
 
 .forminput {
@@ -73,13 +73,20 @@ body{
     font-size: 1.1rem;
     font-weight: 700;
     border-radius: 40px;
+    
 }
- 
-.contactbox .formbutton{
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+
+.contactbox{
+    position: relative;
 }
+
+.formbutton{
+    position: absolute;
+    margin-left: 40%;
+    transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 
 table{
     width: 100%;
@@ -94,7 +101,7 @@ table{
 table tr:nth-child(7) td{
     border-top: 2px solid ;
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .foot p{
