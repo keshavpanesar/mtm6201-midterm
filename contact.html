@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>
+        <a href="#main-skip" class="skip">Skip to main content</a>
         <div class="head-wrap">
             <div class="header">
                 <img class="logo" src="images/white-logo-438_x_150.png" alt="Queenz Bakery Logo">
@@ -32,20 +33,25 @@
     </header>
     <main>
         <div class="main-wrap">
-            <div class="main-content">
-                <div class="details">
+            <div class="main-content" id="main-skip">
+                <!-- adding schema -->
+                <div class="details" itemscope itemtype="https://schema.org/LocalBusiness">
                     <h2>You can find us at</h2>
                     <h4>EMAIL</h4>
-                    <p>queenzbakeryshop@examplemail.com</p>
+                    <p itemprop="email">queenzbakeryshop@examplemail.com</p>
                     <h4>PHONE NUMBER</h4>
-                    <p>343-777-XXXX</p>
-                    <h4>SOCIAL MEDIA</h4>
-                    <p>@queenzbakeryshop on Instagram</p>
+                    <p itemprop="telephone">343-777-XXXX</p>
+                    <h4>ADDRESS</h4>
+                    <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"> 
+                        <span itemprop="name">Queenz Bakery Shop</span> 
+                        <span itemprop="streetAddress">55 Byward Market Sqaure, Ottawa, ON</span>
+                        <span itemprop="postalCode">K1N 9C3</span>
+                    </p>
                 </div>
                 <div class="location">
                     <div class="location">
                         <h2>Location</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567607!2d-75.75712548488849!3d45.349927779099765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1659623511759!5m2!1sen!2sca" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567607!2d-75.75712548488849!3d45.349927779099765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1659623511759!5m2!1sen!2sca" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

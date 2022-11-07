@@ -52,6 +52,24 @@ ul{
     width: 100%;
 }
 
+.skip {
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    text-decoration: none;
+    color: #E6EDF0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    
+}
+
 .food{
     padding: 20px 0;
 }
