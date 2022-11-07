@@ -169,9 +169,7 @@ table tr:nth-child(7) td{
 
 
     .nav-bar {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
+        text-align: right;
     }
 
     .nav-bar ul li {
