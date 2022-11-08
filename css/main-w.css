@@ -1,13 +1,16 @@
+/* seting up a background color for whole webpage */
 html{
     background-color: black;
 
 }
 
+/* styling the txt */
 body{
     color: #E6EDF0;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* setting a wrapper for header */
 .head-wrap{
     width: 80%;
     margin: auto;
@@ -27,6 +30,25 @@ body{
     display: block;
 }
 
+/* customsing skip links for screen reader */
+.skip {
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    text-decoration: none;
+    color: #E6EDF0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/* adds styles to nav bar */
 .nav-bar ul {
     list-style-type: none;
 }
@@ -52,24 +74,7 @@ ul{
     width: 100%;
 }
 
-.skip {
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    text-decoration: none;
-    color: #E6EDF0;
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.skip:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    
-}
-
+/* adding style to all images used together using a common class name */
 .food{
     padding: 20px 0;
 }
@@ -90,6 +95,7 @@ ul{
     color: #A80410;
 }
 
+/* adding style to footer content */
 .foot p{
     font-weight: 100;
     font-size: 0.6rem;
@@ -97,17 +103,20 @@ ul{
     padding-top: 1.6rem;
 }
 
-
+/* adding breakpoint for desktop display */
 @media screen and (min-width: 960px) {
 
+    /* adding flexbox properties to header */
     .header{
         display: flex;
     }
 
+    /* resizing logo */
     .logo{
         width: 29%;
     }
 
+    /* aligning navbar to right */
     header{
         justify-content: space-between;
         margin: auto;
@@ -133,19 +142,21 @@ ul{
         font-size: 1.3rem;
     }
 
+    /* aligning content in header with wraper */
     .head-wrap{
         width: 84%;
         margin: auto;
         justify-content: center;
     }
 
+    /* aligning content in main and footer with wraper */
     .main-wrap,.foot-wrap{
         width: 80%;
         margin: auto;
         justify-content: center;
     }
     
-
+    /* putting animation on images to make them look like they are scaling when hovered */
     @keyframes yummy{
         0%{
           tranform: scale(1) ;
@@ -169,7 +180,7 @@ ul{
         animation-iteration-count: infinite;
       }
 
-
+    /* putting display grid property on pictures */
     .baked{ grid-area: r1}
     .smoothie{ grid-area: r2;}
     .chinese{ grid-area: r3;}

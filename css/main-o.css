@@ -1,32 +1,22 @@
+/* seting up a background color for whole webpage */
 html{
     background-color: black;
-
 }
 
+/* styling the txt */
 body{
     color: #E6EDF0;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* setting a wrapper for header */
 .head-wrap{
     width: 80%;
     margin: auto;
     justify-content: center;
 }
 
-.nav-bar {
-    width: 100%;
-    text-align: center;
-}
-
-.logo{
-    width: 50%;
-    padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
+/* customsing skip links for screen reader */
 .skip {
     left: -10000px;
     top: auto;
@@ -44,6 +34,21 @@ body{
     height: auto;
     
 }
+
+/* adds styles to nav bar */
+.nav-bar {
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 50%;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 
 .nav-bar ul li{
     list-style-type: none;
@@ -66,12 +71,14 @@ ul{
     font-size: 1.2rem;
 }
 
+/* adusting main content wrapper */
 .main-wrap{
     width: 90%;
     margin: auto;
     justify-content: center;
 }
 
+/* stylising the contact form */
 .contactbox {
     font-weight: 600;
     font-size: 1.2rem;
@@ -100,6 +107,7 @@ ul{
     height: 5rem;
 }
 
+/* adding style to submit button */
 .formbutton {
     background-color: #E6EDF0;
     color: black;
@@ -110,12 +118,14 @@ ul{
     transition: ease-in-out 0.25s;
 }
 
+/* adding style to submit button during hover state */
 .formbutton:hover{
     translate: y-axis 1rem;
     padding: 0.2rem 1.5rem;
     font-size: 1.2rem;
 }
 
+/* adding style to submit button during active state or when button is pressed*/
 .formbutton:active{
     background-color: #A80410;
     color: #CBD7CE;
@@ -132,23 +142,26 @@ ul{
     transform: translateY(-50%);
 }
 
-
+/* giving style to table for placing an order */
 table{
     width: 100%;
 }
-
+ 
+/* choosing color for background and text */
 table{
     background-color: #E6EDF0;
     color: black;
     text-align: center;
 }
 
+/* targeting a specific element for table */
 table tr:nth-child(7) td{
     border-top: 2px solid ;
     font-weight: 800;
     font-size: 2rem;
 }
 
+/* adding style to footer content */
 .foot p{
     font-weight: 100;
     font-size: 0.6rem;
@@ -156,23 +169,25 @@ table tr:nth-child(7) td{
     padding-top: 1.6rem;
 }
 
-
-
+  /* adding breakpoint for desktop display */
 @media screen and (min-width: 960px) {
 
+    /* adding flexbox properties to header */
     .header{
         display: flex;
     }
 
+    /* resizing logo */
     .logo{
         width: 29%;
     }
 
-
+    /* aligning navbar to right */
     .nav-bar {
         text-align: right;
     }
 
+    /* styling navbar for desktop view */
     .nav-bar ul li {
         display: inline-block;
         text-decoration: none;
@@ -188,18 +203,21 @@ table tr:nth-child(7) td{
         font-size: 1.3rem;
     }
 
+    /* aligning content in header with wraper */
     .head-wrap{
         width: 84%;
         margin: auto;
         justify-content: center;
     }
 
+    /* aligning content in main and footer with wraper */
     .main-wrap,.foot-wrap{
         width: 75%;
         margin: auto;
         justify-content: center;
     }
     
+    /* putting display grid property on ordering secton */
     .contact{ grid-area: b1;}
     .location{ grid-area: b2;}
     
@@ -213,11 +231,13 @@ table tr:nth-child(7) td{
         gap: 1.5rem;
     }
 
+    /* stylising the contact form */
     .contactbox {
         font-weight: 600;
         font-size: 1.2rem;
     }
 
+    
     .forminput {
         width: 100%;
         height: 3rem;
@@ -245,6 +265,7 @@ table tr:nth-child(7) td{
         align-items: center;
     }
 
+    /* giving style to table for placing an order */
     table{
         background-color: #E6EDF0;
         color: black;

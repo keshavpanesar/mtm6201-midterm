@@ -1,19 +1,23 @@
+/* seting up a background color for whole webpage */
 html{
     background-color: black;
 
 }
 
+/* styling the txt */
 body{
     color: #E6EDF0;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* setting a wrapper for header */
 .head-wrap{
     width: 80%;
     margin: auto;
     justify-content: center;
 }
 
+/* customsing skip links for screen reader */
 .skip {
     left: -10000px;
     top: auto;
@@ -32,6 +36,7 @@ body{
     
 }
 
+/* adds styles to nav bar */
 .nav-bar {
     width: 100%;
     text-align: center;
@@ -68,16 +73,19 @@ ul{
     font-weight: 600;
 }
 
+/* adds style to contact details */
 .details{
     text-align: center;
     padding-bottom: 2rem;
 }
 
+/* sizing location map for mobile view */
 .location{
     width: 90%;
     text-align: center;
 }
 
+/* adding style to footer content */
 .foot p{
     font-weight: 100;
     font-size: 0.6rem;
@@ -85,22 +93,25 @@ ul{
     padding-top: 1.6rem;
 }
 
-
+/* adding breakpoint for desktop display */
 @media screen and (min-width: 960px) {
 
+    /* adding flexbox properties to header */
     .header{
         display: flex;
     }
 
+    /* resizing logo */
     .logo{
         width: 29%;
     }
 
-
+    /* aligning navbar to right */
     .nav-bar {
         text-align: right;
     }
 
+    /* styling navbar for desktop view */
     .nav-bar ul li {
         display: inline-block;
         text-decoration: none;
@@ -117,12 +128,21 @@ ul{
         font-size: 1.3rem;
     }
 
-    .head-wrap,.main-wrap,.foot-wrap{
-        width: 80%;
+    /* aligning content in header with wraper */
+    .head-wrap{
+        width: 84%;
         margin: auto;
         justify-content: center;
     }
 
+    /* aligning content in main and footer with wraper */
+    .main-wrap,.foot-wrap{
+        width: 75%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    /* putting display grid property on contact details */
     .details{ grid-area: b1;}
     .location{ grid-area: b2;}
     
@@ -136,11 +156,13 @@ ul{
         gap: 1.5rem;
     }
 
+    /* aligning text for contacting details */
     .details{
         text-align: left;
         padding-bottom: 2rem;
     }
     
+    /* setting width for map */
     .location{
         width: 100%;
     }

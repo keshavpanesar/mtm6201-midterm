@@ -1,41 +1,27 @@
+/* seting up a background color for whole webpage */
 html{
     background-color: black;
-
 }
 
+/* styling the txt */
 body{
     color: #E6EDF0;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* setting a wrapper for header */
 .head-wrap{
     width: 80%;
     margin: auto;
     justify-content: center;
 }
 
+/* adds styles to nav bar */
 .nav-bar {
     width: 100%;
     text-align: center;
 }
 
-.skip {
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    text-decoration: none;
-    color: #E6EDF0;
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.skip:focus {
-    position: static;
-    width: auto;
-    height: auto;
-    
-}
 
 .logo{
     width: 50%;
@@ -67,10 +53,30 @@ ul{
     transition: 0.25s ease-in-out;
 }
 
+/* customsing skip links for screen reader */
+.skip {
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    text-decoration: none;
+    color: #E6EDF0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+/* making the image of main page display as slideshow */
 .slideshow img{
     width: 100%;
 }
 
+/* adding style to footer content */
 .foot p{
     font-weight: 100;
     font-size: 0.6rem;
@@ -78,21 +84,25 @@ ul{
     padding-top: 1.6rem;
 }
 
-
+  /* adding breakpoint for desktop display */
 @media screen and (min-width: 960px) {
 
+    /* adding flexbox properties to header */
     .header{
         display: flex;
     }
 
+    /* resizing logo */
     .logo{
         width: 29%;
     }
 
+    /* aligning navbar to right */
     .nav-bar {
         text-align: right;
     }
 
+    /* styling navbar for desktop view */
     .nav-bar ul li {
         display: inline-block;
         text-decoration: none;
@@ -109,18 +119,21 @@ ul{
         font-size: 1.3rem;
     }
 
+    /* aligning content in header with wraper */
     .head-wrap{
         width: 84%;
         margin: auto;
         justify-content: center;
     }
 
+    /* aligning content in header with wraper */
     .main-wrap,.foot-wrap{
         width: 80%;
         margin: auto;
         justify-content: center;
     }
 
+    /* adding padding to slideshow image on top side */
     .slideshow{
         padding-top: 5rem;
     }
