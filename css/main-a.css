@@ -1,3 +1,4 @@
+
 html{
     background-color: black;
 
@@ -118,17 +119,17 @@ ul{
     padding-top: 1.6rem;
 }
 
-p::before {  
+.founder-text p::before {  
     transform: scaleX(0);
     transform-origin: bottom right;
   }
   
-  p:hover::before {
+.founder-text p:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
   
-  p::before {
+.founder-text p::before {
     content: " ";
     display: block;
     position: absolute;
@@ -139,11 +140,9 @@ p::before {
     transition: transform .4s ease;
   }
   
-  p{
+.founder-text p{
     position: relative;
   }
-  
-  
 
 @media screen and (min-width: 960px) {
 
